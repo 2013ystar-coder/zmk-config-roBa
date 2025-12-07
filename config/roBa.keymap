@@ -86,6 +86,13 @@
             bindings = <&kp K &kp E &kp I &kp B &kp O &kp LBKT &kp C &kp I &kp T &kp Y &kp DOT &kp I &kp W &kp A &kp T &kp A &kp DOT &kp L &kp G &kp DOT &kp J &kp P>;
             label = "KEIBOMAIL";
         };
+
+        birthday: birthday {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_8 &kp NUMBER_0 &kp NUMBER_0 &kp NUMBER_7 &kp NUMBER_3 &kp NUMBER_1>;
+            label = "BIRTHDAY";
+        };
     };
 
     behaviors {
@@ -115,10 +122,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans     &keibomail  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &birthday  &pas1       &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans     &trans      &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans     &trans      &trans  &trans      &trans   &trans                          &kp F12
             >;
         };
 
