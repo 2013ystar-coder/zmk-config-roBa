@@ -43,14 +43,15 @@
     arrows {
         layers = <3>;
         bindings =
-             <&kp RIGHT_ARROW>,
+            <&kp RIGHT_ARROW>,
             <&kp LEFT_ARROW>,
             <&kp UP_ARROW>,
-             <&kp DOWN_ARROW>;
-         tick = <10>;
-         wait-ms = <5>;
-         tap-ms = <5>;
-     };
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
@@ -139,7 +140,7 @@
         kagikakko: kagikakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACE &kp BSLH &kp LEFT_ARROW>;
+            bindings = <&kp RS(EQUAL) &kp BSLH &kp LEFT_ARROW>;
             label = "KAGIKAKKO";
         };
     };
@@ -153,7 +154,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
     };
 
     keymap {
@@ -181,7 +181,7 @@
 
         NUM {
             bindings = <
-&kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SQT                                   &kp AMPS         &kp AT        &kp INT3    &kp RS(KP_COMMA)  &kp RS(PERIOD)
+&kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SQT                                   &kp LS(LBKT)     &kp AT        &kp INT3    &kp RS(KP_COMMA)  &kp RS(PERIOD)
 &kp MINUS                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMI)   &trans      &kp RS(INT1)   &kp EXCLAMATION  &kp LBKT      &kp HASH    &kp RS(NUMBER_6)  &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans      &kp RS(EQUAL)  &curlybracket    &parenthesis  &kagikakko  &kp RS(SLASH)     &kp LS(NUMBER_4)
 &trans                      &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans         &trans      &trans         &trans                                                       &trans
