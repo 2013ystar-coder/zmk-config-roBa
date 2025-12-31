@@ -147,13 +147,6 @@
             bindings = <&kp RBRC &kp BSLH &kp LEFT_ARROW>;
             label = "KAGIKAKKO";
         };
-
-        squarebracket: squarebracket {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp>;
-            label = "SQUAREBRACKET";
-        };
     };
 
     behaviors {
