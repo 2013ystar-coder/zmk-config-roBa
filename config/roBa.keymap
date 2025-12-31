@@ -91,6 +91,11 @@
             bindings = <&kp RC(X)>;
             key-positions = <6 7>;
         };
+
+        t4 {
+            bindings = <&mo 4>;
+            key-positions = <12 38>;
+        };
     };
 
     macros {
@@ -142,6 +147,13 @@
             bindings = <&kp RBRC &kp BSLH &kp LEFT_ARROW>;
             label = "KAGIKAKKO";
         };
+
+        squarebracket: squarebracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp>;
+            label = "SQUAREBRACKET";
+        };
     };
 
     behaviors {
@@ -180,10 +192,10 @@
 
         NUM {
             bindings = <
-&kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SQT                                  &kp AMPS         &kp AT        &kp INT3    &kp RS(KP_COMMA)  &kp RS(PERIOD)
-&kp MINUS                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMI)   &trans      &kp RS(INT1)  &kp EXCLAMATION  &kp LBKT      &kp HASH    &kp RS(NUMBER_6)  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans      &trans        &curlybracket    &parenthesis  &kagikakko  &kp RS(SLASH)     &kp LS(NUMBER_4)
-&trans                      &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans         &trans      &trans        &trans                                                       &trans
+&kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SQT                                   &kp AMPS         &kp AT        &kp INT3    &kp RS(KP_COMMA)  &kp RS(PERIOD)
+&kp MINUS                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMI)   &trans      &kp RS(INT1)   &kp EXCLAMATION  &kp LBKT      &kp HASH    &kp RS(NUMBER_6)  &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans      &kp RS(EQUAL)  &curlybracket    &parenthesis  &kagikakko  &kp RS(SLASH)     &kp LS(NUMBER_4)
+&trans                      &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans         &trans      &trans         &trans                                                       &trans
             >;
         };
 
