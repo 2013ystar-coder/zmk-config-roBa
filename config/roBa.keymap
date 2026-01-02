@@ -149,10 +149,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R       &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F       &kp G        &kp LS(LG(S))           &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V       &kp B        &kp SEMI                &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 INT5  &lt 2 SPACE  &lt 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R        &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F        &kp G        &kp LS(LG(S))           &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp SEMI                &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 GRAVE  &lt 2 SPACE  &lt 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -169,9 +169,9 @@
 
         NUM {
             bindings = <
-&kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SQT                                  &kp LS(NUMBER_7)  &kp AT        &kp INT3       &kp RS(KP_COMMA)  &kp RS(PERIOD)
+&kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SQT                                  &kp LS(NUMBER_7)  &kp AT        &kp INT3       &kp RS(COMMA)     &kp RS(PERIOD)
 &kp MINUS                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMI)   &trans      &kp RS(INT1)  &kp EXCLAMATION   &kp LBKT      &kp HASH       &kp RS(NUMBER_6)  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans      &trans        &trans            &parenthesis  &curlybracket  &kp RS(SLASH)     &kp LS(NUMBER_4)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans      &trans        &kp EQUAL         &parenthesis  &curlybracket  &kp RS(SLASH)     &kp LS(NUMBER_4)
 &trans                      &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans         &trans      &trans        &trans                                                           &trans
             >;
         };
