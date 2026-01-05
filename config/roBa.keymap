@@ -87,6 +87,11 @@
             bindings = <&kp RC(X)>;
             key-positions = <6 7>;
         };
+
+        L4 {
+            bindings = <&mo 4>;
+            key-positions = <37 38>;
+        };
     };
 
     macros {
@@ -169,10 +174,10 @@
 
         NUM {
             bindings = <
-&kp SLASH                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SQT                                  &kp LS(NUMBER_7)  &kp AT        &kp INT3       &kp RS(COMMA)     &kp RS(PERIOD)
-&kp MINUS                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMI)   &trans      &kp RS(INT1)  &kp EXCLAMATION   &kp LBKT      &kp HASH       &kp RS(NUMBER_6)  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans      &trans        &kp EQUAL         &parenthesis  &curlybracket  &kp RS(SLASH)     &kp LS(NUMBER_4)
-&trans                      &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans         &trans      &trans        &trans                                                           &trans
+&kp SLASH                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SQT                                  &kp LS(NUMBER_7)  &kp AT        &kp INT3       &kp RS(COMMA)     &kp RS(PERIOD)
+&kp MINUS                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SEMI)   &trans      &kp RS(INT1)  &kp EXCLAMATION   &kp LBKT      &kp HASH       &kp RS(NUMBER_6)  &kp PERCENT
+&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans      &trans        &kp EQUAL         &parenthesis  &curlybracket  &kp RS(SLASH)     &kp LS(NUMBER_4)
+&trans                   &kp NUMBER_0  &kp DOT       &trans        &trans         &trans      &trans        &trans                                                           &trans
             >;
         };
 
