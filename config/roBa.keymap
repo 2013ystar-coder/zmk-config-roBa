@@ -88,9 +88,19 @@
             key-positions = <6 7>;
         };
 
-        L4 {
-            bindings = <&mo 4>;
-            key-positions = <37 38>;
+        L2 {
+            bindings = <&none>;
+            key-positions = <7 8>;
+        };
+
+        shift {
+            bindings = <&none>;
+            key-positions = <20 19>;
+        };
+
+        ctrl {
+            bindings = <&none>;
+            key-positions = <31 32>;
         };
     };
 
