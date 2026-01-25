@@ -89,7 +89,7 @@
         };
 
         L2 {
-            bindings = <&to 2>;
+            bindings = <&mo 2>;
             key-positions = <7 8>;
         };
 
