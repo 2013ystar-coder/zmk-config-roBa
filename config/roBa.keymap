@@ -89,17 +89,17 @@
         };
 
         L2 {
-            bindings = <&none>;
+            bindings = <&to 2>;
             key-positions = <7 8>;
         };
 
         shift {
-            bindings = <&none>;
+            bindings = <&kp RSHFT>;
             key-positions = <20 19>;
         };
 
         ctrl {
-            bindings = <&none>;
+            bindings = <&kp RCTRL>;
             key-positions = <31 32>;
         };
     };
