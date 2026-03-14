@@ -102,6 +102,11 @@
             bindings = <&kp RCTRL>;
             key-positions = <31 32>;
         };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <18 19 20>;
+        };
     };
 
     macros {
@@ -175,10 +180,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans     &keibomail  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &birthday  &pas1       &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans     &trans      &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans     &trans      &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans     &keibomail  &trans                       &kp F1            &kp F2            &kp F3        &kp F4        &kp F5
+&trans  &trans  &birthday  &pas1       &trans  &trans      &kp F13  &kp F6            &kp F7            &kp F8        &kp F9        &kp F10
+&trans  &trans  &trans     &trans      &trans  &trans      &trans   &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(RBRC)  &kp RS(BSLH)  &kp F11
+&trans  &trans  &trans     &trans      &trans  &trans      &trans   &trans                                                          &kp F12
             >;
         };
 
