@@ -1,9 +1,7 @@
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.2.1
     with:
       build_matrix_path: "build.yaml"
       config_path: "config"
-      fallback_binary: true
-      cmake_args: "-DCONFIG_ZMK_BOARD_COMPAT=y"
